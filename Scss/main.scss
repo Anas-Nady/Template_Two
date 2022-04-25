@@ -1,0 +1,183 @@
+
+
+@import '../Scss/helpers/variables';
+
+@import '../Scss/helpers/mixins';
+
+@import '../Scss/layout/gridSystem';
+
+
+
+
+main{
+    background-image: url(../imgs/desktop/image-hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        font-size: 40px;
+    }
+    ul{
+        list-style: none;
+        margin: 30px 0 0 0 ;
+    a{
+        &:hover{
+        }
+        li{
+            position: relative;
+            letter-spacing: 1px;
+            font-size: 18px;
+            &::before{
+                content: "";
+                position: absolute;
+                transition: $transition;
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                bottom: -7px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+            }
+            &:hover::before{
+                display: block;
+            }
+        }
+    }
+    }
+    .text-page{
+        font-size: 50px;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        max-width: 400px;
+        padding: 10px;
+        font-weight: normal;
+    }
+}
+
+
+
+// Start About 
+
+.about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    .about-content{
+        color: black;
+        .image{
+            position: relative;
+            // width: 400px;
+            margin-bottom: 50px;
+            img{
+                max-width: 100%;
+
+            }
+        }
+        .text-content{
+            h3{
+                text-transform: uppercase;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            p{
+                width: 400px;
+                letter-spacing: 1px;
+                line-height: 1.6;
+                color: rgb(102, 102, 102);
+            }
+        }
+
+    }
+}
+
+// end About 
+
+
+// Start out Skills 
+
+.ourskills{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    .head{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        h3{
+            font-size: 40px;
+            font-weight: normal;
+            color: black !important;
+        }
+        button{
+            color: black;
+            padding: 10px 30px;
+            background-color: white;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            border: 1px solid black;
+            font-size: 18px;
+            transition: $transition;
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    .row{
+        margin-bottom: 10px;
+        > div{
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 20px;
+        h3{
+        position: absolute;
+        bottom: 20px;
+        text-transform: uppercase;
+        width: 100px;
+        left: 50px;
+    }
+    }
+    img{
+        transition: $transition;
+        &:hover{
+            opacity: .5;
+        }
+    }
+    }
+}
+
+footer{
+    background-color: black;
+    .links-footer{
+        padding: 20px;
+        .logo{
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .navbar{
+            a{
+                &:hover{
+                    text-decoration: dotted;
+                }
+            }
+        }
+    }
+    .icon-social{
+        padding: 40px;
+        i{
+            font-size: 20px;
+            margin: 0 0 10px 10px;
+            cursor: pointer;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 18x;
+            color: #eee;
+        }
+    }
+}
