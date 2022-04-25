@@ -77,18 +77,18 @@ main {
       line-height: 1.6;
       color: #666666; }
 
-.ourskills {
+.our-gallery {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative; }
-  .ourskills .head {
+  .our-gallery .head {
     margin-bottom: 20px;
     text-transform: uppercase; }
-    .ourskills .head h3 {
+    .our-gallery .head h3 {
       font-size: 40px;
       font-weight: normal;
       color: black !important; }
-    .ourskills .head button {
+    .our-gallery .head button {
       color: black;
       padding: 10px 30px;
       background-color: white;
@@ -98,25 +98,54 @@ main {
       border: 1px solid black;
       font-size: 18px;
       transition: 0.3s; }
-      .ourskills .head button:hover {
+      .our-gallery .head button:hover {
         background-color: black;
         color: white; }
-  .ourskills .row {
+  .our-gallery .row {
     margin-bottom: 10px; }
-    .ourskills .row > div {
+    .our-gallery .row > div {
       cursor: pointer;
       position: relative;
       margin-bottom: 20px; }
-      .ourskills .row > div h3 {
+      .our-gallery .row > div h3 {
         position: absolute;
         bottom: 20px;
         text-transform: uppercase;
         width: 100px;
         left: 50px; }
-    .ourskills .row img {
+    .our-gallery .row img {
       transition: 0.3s; }
-      .ourskills .row img:hover {
+      .our-gallery .row img:hover {
         opacity: .5; }
+
+.Popup-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000; }
+
+.popup-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 100000000; }
+  .popup-box img {
+    max-width: 100%; }
+  .popup-box .close-button {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    cursor: pointer; }
 
 footer {
   background-color: black; }
